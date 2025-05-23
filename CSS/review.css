@@ -1,0 +1,190 @@
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f9f7f5;
+            color: #333333;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .menu-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .menu-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .allergen-tag {
+            font-size: 0.65rem;
+            padding: 2px 6px;
+            border-radius: 4px;
+            background-color: #f3f4f6;
+            color: #4b5563;
+            margin-right: 4px;
+            margin-bottom: 4px;
+            display: inline-block;
+        }
+
+        .review-stars i {
+            color: #d4af37;
+        }
+
+        .tab-active {
+            color: #8b5cf6;
+            border-bottom: 3px solid #8b5cf6;
+        }
+
+        .review-form-stars {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+        }
+
+        .review-form-stars label {
+            cursor: pointer;
+            width: 25px;
+        }
+
+        .review-form-stars label:before {
+            content: '\f005';
+            font-family: 'Font Awesome 5 Free';
+            display: inline-block;
+            font-size: 1.5rem;
+            color: #ccc;
+        }
+
+        .review-form-stars input:checked~label:before {
+            color: #d4af37;
+            font-weight: 900;
+        }
+
+        .dish-tag {
+            background-color: #f3f0ff;
+            border: 1px solid #ddd6fe;
+            color: #7c3aed;
+        }
+
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, #d1d5db, transparent);
+            margin: 3rem 0;
+        }
+
+        .menu-image {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .menu-image::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3));
+        }
+
+        .menu-category-label {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #4b5563;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            z-index: 10;
+        }
+
+        .price-tag {
+            background-color: #8b5cf6;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-weight: 600;
+        }
+
+        .review-avatar {
+            background-color: #f3f0ff;
+            color: #7c3aed;
+            border: 2px solid #ddd6fe;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .section-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .section-icon {
+                margin-right: 0;
+                margin-bottom: 8px;
+            }
+
+            .dish-image {
+                width: 48px;
+                height: 48px;
+                min-width: 48px;
+                margin-right: 0.5rem;
+            }
+
+            .dish-image svg {
+                width: 28px;
+                height: 28px;
+            }
+
+            .site-name {
+                font-size: 1.1rem;
+            }
+
+            .divider {
+                height: 40px;
+                margin: 24px 0;
+            }
+
+            .filter-btn {
+                padding: 0.4rem 0.8rem;
+                font-size: 0.95rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 0.5rem 0;
+            }
+
+            .site-name {
+                font-size: 1rem;
+            }
+
+            h1,
+            h2,
+            h3 {
+                font-size: 1.1rem;
+            }
+
+            .section-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .divider {
+                height: 24px;
+                margin: 16px 0;
+            }
+
+            .filter-btn {
+                padding: 0.3rem 0.6rem;
+                font-size: 0.9rem;
+            }
+        }

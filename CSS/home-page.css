@@ -1,0 +1,166 @@
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f9f5f0;
+        color: #333;
+        margin: 0;
+    }
+
+    header {
+        background-color: #8b5e34;
+        color: #fff;
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    .site-name {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 0;
+    }
+    h1,
+    h2,
+    h3 {
+        font-family: 'Playfair Display', serif;
+    }
+
+    .menu-section {
+        scroll-margin-top: 100px;
+    }
+
+    .allergen-tag {
+        font-size: 0.7rem;
+        padding: 0.15rem 0.4rem;
+        border-radius: 2px;
+        background-color: #f0e6d9;
+        color: #8b5e34;
+        margin-right: 0.3rem;
+        display: inline-block;
+    }
+
+    .section-icon {
+        width: 40px;
+        height: 40px;
+        margin-right: 12px;
+    }
+
+    .section-header {
+        display: flex;
+        align-items: center;
+    }
+
+    .divider {
+        position: relative;
+        height: 60px;
+        margin: 40px 0;
+    }
+
+    .divider svg {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .filter-btn {
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        background-color: #f0e6d9;
+        color: #8b5e34;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        margin: 0.25rem;
+        white-space: nowrap;
+    }
+
+    .filter-btn:hover {
+        background-color: #e6d7c3;
+    }
+
+    .filter-btn.active {
+        background-color: #8b5e34;
+        color: #fff;
+    }
+
+    .dish-image {
+        width: 60px;
+        height: 60px;
+        min-width: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f0e6d9;
+        border-radius: 50%;
+        margin-right: 1rem;
+    }
+
+    .dish-image svg {
+        width: 36px;
+        height: 36px;
+    }
+
+    .special-tag {
+        font-size: 0.7rem;
+        padding: 0.15rem 0.4rem;
+        border-radius: 2px;
+        background-color: #e6d7c3;
+        color: #8b5e34;
+        margin-left: 0.5rem;
+        display: inline-block;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+        .section-header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .section-icon {
+            margin-right: 0;
+            margin-bottom: 8px;
+        }
+        .dish-image {
+            width: 48px;
+            height: 48px;
+            min-width: 48px;
+            margin-right: 0.5rem;
+        }
+        .dish-image svg {
+            width: 28px;
+            height: 28px;
+        }
+        .site-name {
+            font-size: 1.1rem;
+        }
+        .divider {
+            height: 40px;
+            margin: 24px 0;
+        }
+        .filter-btn {
+            padding: 0.4rem 0.8rem;
+            font-size: 0.95rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        header {
+            padding: 0.5rem 0;
+        }
+        .site-name {
+            font-size: 1rem;
+        }
+        h1, h2, h3 {
+            font-size: 1.1rem;
+        }
+        .section-header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .divider {
+            height: 24px;
+            margin: 16px 0;
+        }
+        .filter-btn {
+            padding: 0.3rem 0.6rem;
+            font-size: 0.9rem;
+        }
+    }
