@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,59 +9,71 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/review.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
 </head>
+
 <body>
     <!-- Header -->
-    <header class="bg-[#06180C] text-white  overflow-hidden py-6 shadow-md top-0 z-10">
+    <header class="bg-[#06180C] text-white  overflow-hidden py-6 shadow-md top-0 z-10 x">
         <div class="container mx-auto px-4 md:px-8">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="flex items-center mb-4 md:mb-0">
-                    <a href="#"><img src="../IMG/BistroEleganceLogo.png" alt="Bistro Elegance Logo" class="w-14 h-14 rounded-xl shadow-lg mr-4 border-2 border-white/20" style="width: 80px; height: 80px;"></a>
+                    <a href="#"><img src="../IMG/BistroEleganceLogo.png" alt="Bistro Elegance Logo"
+                            class="w-14 h-14 rounded-xl shadow-lg mr-4 border-2 border-white/20"
+                            style="width: 80px; height: 80px;"></a>
                     <p class="site-name">Bistro Elegance</p>
                 </div>
                 <nav class="w-full md:w-auto">
                     <ul class="flex flex-wrap justify-center gap-2 md:gap-6">
-                        <li><a href="pages/about-us.html" class="px-3 py-2 hover:bg-[#34495e] rounded-md transition">About Us</a>
+                        <li><a href="../index.html" class="px-3 py-2 hover:bg-[#34495e] rounded-md transition">Home Page</a>
                         </li>
-                        <li><a href="pages/contact-us.html" class="px-3 py-2 hover:bg-[#34495e] rounded-md transition">Contact Us</a>
+                        <li><a href="../about-us.html" class="px-3 py-2 hover:bg-[#34495e] rounded-md transition">AboutUs</a>
                         </li>
-                        <li><a href="pages/review.html" class="px-3 py-2 hover:bg-[#34495e] rounded-md transition">Reviews</a>
+                        <li><a href="../contact-us.html"
+                                class="px-3 py-2 hover:bg-[#34495e] rounded-md transition">Contact Us</a>
                         </li>
+
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
 
-    
+
     <!-- Navigation Bar -->
     <nav class="bg-white shadow-md py-4 sticky top-0 z-10">
         <div class="container mx-auto flex justify-between items-center px-4 md:px-6">
             <div class="flex space-x-8">
-                <a href="#menu-section" class="tab-active font-medium py-2 px-1 text-lg transition duration-300">Menu</a>
-                <a href="#reviews-section" class="text-gray-600 font-medium py-2 px-1 text-lg hover:text-violet-600 transition duration-300">Reviews</a>
+                <a href="#menu-section"
+                    class=" font-medium py-2 px-1 text-lg transition duration-300 hover:text-[#06180C] hover: transition duration-300">Menu</a>
+                <a href="#reviews-section"
+                    class=" font-medium py-2 px-1 text-lg transition duration-300 hover:text-[#06180C] hover: transition duration-300">Reviews</a>
             </div>
-            <a href="#write-review-section" class="bg-[#06180C] hover:bg-[#0D3119] text-white py-2 px-6 rounded-lg transition duration-300 flex items-center shadow-md">
+            <a href="#write-review-section"
+                class="bg-[#06180C] hover:bg-[#0D3119] text-white py-2 px-6 rounded-lg transition duration-300 flex items-center shadow-md">
                 <i class="fas fa-pen-to-square mr-2"></i> Write a Review
             </a>
         </div>
     </nav>
-    
+
     <main class="container mx-auto py-12 px-4 md:px-6">
         <!-- Menu Section -->
         <section id="menu-section" class="mb-16">
             <div class="text-center mb-12">
                 <h2 class="text-4xl font-bold text-gray-800 mb-3">Our Curated Menu</h2>
-                <div class="w-16 h-1 bg-violet-600 mx-auto mb-4"></div>
-                <p class="text-gray-600 max-w-2xl mx-auto">Discover our selection of expertly crafted dishes, prepared with the finest ingredients and attention to detail</p>
+                <div class="w-16 h-1 bg-bg-[#06180C]-600 mx-auto mb-4"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Discover our selection of expertly crafted dishes, prepared
+                    with the finest ingredients and attention to detail</p>
             </div>
-            
+
             <div class="flex justify-between items-center mb-8">
                 <h3 class="text-2xl font-semibold text-gray-700">Featured Dishes</h3>
                 <div class="flex items-center space-x-2">
                     <span class="text-lg font-medium text-gray-600">Filter by:</span>
                     <form method="get" action="">
-                        <select name="category" class="border border-gray-300 rounded-md py-2 px-4 bg-white focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent">
+                        <select name="category"
+                            class="border border-gray-300 rounded-md py-2 px-4 bg-white focus:outline-none focus:ring-2 focus:ring-bg-[#06180C]-500 focus:border-transparent">
                             <option value="all">All Categories</option>
                             <option value="starters">Starters</option>
                             <option value="mains">Main Courses</option>
@@ -70,16 +83,19 @@
                     </form>
                 </div>
             </div>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Starters -->
                 <div class="menu-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
                     <div class="h-56 overflow-hidden menu-image">
                         <span class="menu-category-label">Starter</span>
-                        <div class="w-full h-full bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center">
+                        <div
+                            class="w-full h-full bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center">
                             <!-- Starter SVG Icon -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-white" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
                         </div>
                     </div>
@@ -88,7 +104,8 @@
                             <h3 class="text-xl font-bold text-gray-800">Crispy Calamari</h3>
                             <span class="price-tag">$12.99</span>
                         </div>
-                        <p class="text-gray-600 mb-4 leading-relaxed">Tender calamari rings lightly coated in seasoned flour and fried to perfection. Served with lemon aioli and fresh herbs.</p>
+                        <p class="text-gray-600 mb-4 leading-relaxed">Tender calamari rings lightly coated in seasoned
+                            flour and fried to perfection. Served with lemon aioli and fresh herbs.</p>
                         <div class="mb-4">
                             <span class="allergen-tag">Gluten</span>
                             <span class="allergen-tag">Seafood</span>
@@ -105,14 +122,17 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="menu-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
                     <div class="h-56 overflow-hidden menu-image">
                         <span class="menu-category-label">Starter</span>
-                        <div class="w-full h-full bg-gradient-to-br from-green-400 to-emerald-500 flex items-center justify-center">
+                        <div
+                            class="w-full h-full bg-gradient-to-br from-green-400 to-emerald-500 flex items-center justify-center">
                             <!-- Starter SVG Icon -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-white" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
                             </svg>
                         </div>
                     </div>
@@ -121,7 +141,8 @@
                             <h3 class="text-xl font-bold text-gray-800">Bruschetta</h3>
                             <span class="price-tag">$9.99</span>
                         </div>
-                        <p class="text-gray-600 mb-4 leading-relaxed">Toasted artisan bread topped with fresh tomatoes, basil, garlic, and extra virgin olive oil. Finished with balsamic glaze.</p>
+                        <p class="text-gray-600 mb-4 leading-relaxed">Toasted artisan bread topped with fresh tomatoes,
+                            basil, garlic, and extra virgin olive oil. Finished with balsamic glaze.</p>
                         <div class="mb-4">
                             <span class="allergen-tag">Gluten</span>
                         </div>
@@ -137,15 +158,18 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Main Courses -->
                 <div class="menu-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
                     <div class="h-56 overflow-hidden menu-image">
                         <span class="menu-category-label">Main Course</span>
-                        <div class="w-full h-full bg-gradient-to-br from-red-400 to-rose-500 flex items-center justify-center">
+                        <div
+                            class="w-full h-full bg-gradient-to-br from-red-400 to-rose-500 flex items-center justify-center">
                             <!-- Main Course SVG Icon -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-white" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
                             </svg>
                         </div>
                     </div>
@@ -154,7 +178,8 @@
                             <h3 class="text-xl font-bold text-gray-800">Grilled Salmon</h3>
                             <span class="price-tag">$24.99</span>
                         </div>
-                        <p class="text-gray-600 mb-4 leading-relaxed">Fresh Atlantic salmon fillet grilled to perfection, served with roasted seasonal vegetables and lemon herb sauce.</p>
+                        <p class="text-gray-600 mb-4 leading-relaxed">Fresh Atlantic salmon fillet grilled to
+                            perfection, served with roasted seasonal vegetables and lemon herb sauce.</p>
                         <div class="mb-4">
                             <span class="allergen-tag">Fish</span>
                         </div>
@@ -170,14 +195,17 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="menu-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
                     <div class="h-56 overflow-hidden menu-image">
                         <span class="menu-category-label">Main Course</span>
-                        <div class="w-full h-full bg-gradient-to-br from-amber-400 to-yellow-500 flex items-center justify-center">
+                        <div
+                            class="w-full h-full bg-gradient-to-br from-amber-400 to-yellow-500 flex items-center justify-center">
                             <!-- Main Course SVG Icon -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-white" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                             </svg>
                         </div>
                     </div>
@@ -186,7 +214,8 @@
                             <h3 class="text-xl font-bold text-gray-800">Mushroom Risotto</h3>
                             <span class="price-tag">$18.99</span>
                         </div>
-                        <p class="text-gray-600 mb-4 leading-relaxed">Creamy Arborio rice slowly cooked with wild mushrooms, white wine, and finished with aged parmesan cheese and truffle oil.</p>
+                        <p class="text-gray-600 mb-4 leading-relaxed">Creamy Arborio rice slowly cooked with wild
+                            mushrooms, white wine, and finished with aged parmesan cheese and truffle oil.</p>
                         <div class="mb-4">
                             <span class="allergen-tag">Dairy</span>
                         </div>
@@ -202,15 +231,18 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Desserts -->
                 <div class="menu-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
                     <div class="h-56 overflow-hidden menu-image">
                         <span class="menu-category-label">Dessert</span>
-                        <div class="w-full h-full bg-gradient-to-br from-pink-400 to-purple-500 flex items-center justify-center">
+                        <div
+                            class="w-full h-full bg-gradient-to-br from-pink-400 to-purple-500 flex items-center justify-center">
                             <!-- Dessert SVG Icon -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z" />
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-white" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z" />
                             </svg>
                         </div>
                     </div>
@@ -219,7 +251,8 @@
                             <h3 class="text-xl font-bold text-gray-800">Chocolate Lava Cake</h3>
                             <span class="price-tag">$10.99</span>
                         </div>
-                        <p class="text-gray-600 mb-4 leading-relaxed">Warm chocolate cake with a molten center, served with premium vanilla bean ice cream and fresh seasonal berries.</p>
+                        <p class="text-gray-600 mb-4 leading-relaxed">Warm chocolate cake with a molten center, served
+                            with premium vanilla bean ice cream and fresh seasonal berries.</p>
                         <div class="mb-4">
                             <span class="allergen-tag">Gluten</span>
                             <span class="allergen-tag">Dairy</span>
@@ -237,15 +270,18 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Beverages -->
                 <div class="menu-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
                     <div class="h-56 overflow-hidden menu-image">
                         <span class="menu-category-label">Beverage</span>
-                        <div class="w-full h-full bg-gradient-to-br from-blue-400 to-cyan-500 flex items-center justify-center">
+                        <div
+                            class="w-full h-full bg-gradient-to-br from-blue-400 to-cyan-500 flex items-center justify-center">
                             <!-- Beverage SVG Icon -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-white" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
                         </div>
                     </div>
@@ -254,7 +290,8 @@
                             <h3 class="text-xl font-bold text-gray-800">Berry Smoothie</h3>
                             <span class="price-tag">$7.99</span>
                         </div>
-                        <p class="text-gray-600 mb-4 leading-relaxed">Refreshing blend of mixed berries, Greek yogurt, and organic honey. A perfect healthy treat to complement your meal.</p>
+                        <p class="text-gray-600 mb-4 leading-relaxed">Refreshing blend of mixed berries, Greek yogurt,
+                            and organic honey. A perfect healthy treat to complement your meal.</p>
                         <div class="mb-4">
                             <span class="allergen-tag">Dairy</span>
                         </div>
@@ -272,17 +309,18 @@
                 </div>
             </div>
         </section>
-        
+
         <div class="section-divider"></div>
-        
+
         <!-- Reviews Section -->
         <section id="reviews-section" class="mb-16">
             <div class="text-center mb-12">
                 <h2 class="text-4xl font-bold text-gray-800 mb-3">Customer Reviews</h2>
-                <div class="w-16 h-1 bg-violet-600 mx-auto mb-4"></div>
-                <p class="text-gray-600 max-w-2xl mx-auto">See what our valued customers have to say about their dining experience</p>
+                <div class="w-16 h-1 bg-bg-[#06180C]-600 mx-auto mb-4"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">See what our valued customers have to say about their dining
+                    experience</p>
             </div>
-            
+
             <div class="flex justify-between items-center mb-8">
                 <!-- Average Rating Display -->
                 <div class="bg-white rounded-xl shadow-sm p-4 flex items-center">
@@ -302,7 +340,8 @@
                 <form method="get" action="" class="bg-white rounded-xl shadow-sm p-4">
                     <div class="flex items-center">
                         <label for="sort" class="text-gray-700 mr-3 font-medium">Sort by:</label>
-                        <select id="sort" name="sort" class="border border-gray-300 rounded-md py-2 px-4 bg-white focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent">
+                        <select id="sort" name="sort"
+                            class="border border-gray-300 rounded-md py-2 px-4 bg-white focus:outline-none focus:ring-2 focus:ring-bg-[#06180C]-500 focus:border-transparent">
                             <option value="newest">Newest First</option>
                             <option value="highest">Highest Rated</option>
                             <option value="lowest">Lowest Rated</option>
@@ -310,7 +349,7 @@
                     </div>
                 </form>
             </div>
-            
+
             <div class="space-y-8">
                 <!-- Review 1 -->
                 <div class="bg-white rounded-xl shadow-md p-8 border border-gray-100">
@@ -332,18 +371,23 @@
                             <i class="fas fa-star"></i>
                         </div>
                     </div>
-                    <p class="text-gray-700 mb-5 leading-relaxed">The menu is absolutely fantastic! I especially loved the Grilled Salmon - perfectly cooked and seasoned. The Chocolate Lava Cake was to die for. The menu is well-organized and has clear allergen information which is very helpful for someone with dietary restrictions like me. The presentation of each dish was impeccable and the flavors were balanced perfectly.</p>
+                    <p class="text-gray-700 mb-5 leading-relaxed">The menu is absolutely fantastic! I especially loved
+                        the Grilled Salmon - perfectly cooked and seasoned. The Chocolate Lava Cake was to die for. The
+                        menu is well-organized and has clear allergen information which is very helpful for someone with
+                        dietary restrictions like me. The presentation of each dish was impeccable and the flavors were
+                        balanced perfectly.</p>
                     <div class="flex flex-wrap gap-2">
                         <span class="dish-tag text-xs px-3 py-1 rounded-full">Grilled Salmon</span>
                         <span class="dish-tag text-xs px-3 py-1 rounded-full">Chocolate Lava Cake</span>
                     </div>
                 </div>
-                
+
                 <!-- Review 2 -->
                 <div class="bg-white rounded-xl shadow-md p-8 border border-gray-100">
                     <div class="flex justify-between items-start mb-6">
                         <div class="flex items-center">
-                            <div class="w-16 h-16 rounded-full review-avatar flex items-center justify-center mr-4" style="background-color: #fdf2f8; color: #db2777; border-color: #fbcfe8;">
+                            <div class="w-16 h-16 rounded-full review-avatar flex items-center justify-center mr-4"
+                                style="background-color: #fdf2f8; color: #db2777; border-color: #fbcfe8;">
                                 <span class="text-2xl font-bold">AS</span>
                             </div>
                             <div>
@@ -359,18 +403,23 @@
                             <i class="far fa-star"></i>
                         </div>
                     </div>
-                    <p class="text-gray-700 mb-5 leading-relaxed">I really appreciate how the menu is laid out with clear categories. The Mushroom Risotto was creamy and delicious - the perfect consistency and the truffle oil added a wonderful depth of flavor. My only suggestion would be to add more vegetarian options, but overall a great selection of dishes! The staff was also very knowledgeable about the menu items.</p>
+                    <p class="text-gray-700 mb-5 leading-relaxed">I really appreciate how the menu is laid out with
+                        clear categories. The Mushroom Risotto was creamy and delicious - the perfect consistency and
+                        the truffle oil added a wonderful depth of flavor. My only suggestion would be to add more
+                        vegetarian options, but overall a great selection of dishes! The staff was also very
+                        knowledgeable about the menu items.</p>
                     <div class="flex flex-wrap gap-2">
                         <span class="dish-tag text-xs px-3 py-1 rounded-full">Mushroom Risotto</span>
                         <span class="dish-tag text-xs px-3 py-1 rounded-full">Bruschetta</span>
                     </div>
                 </div>
-                
+
                 <!-- Review 3 -->
                 <div class="bg-white rounded-xl shadow-md p-8 border border-gray-100">
                     <div class="flex justify-between items-start mb-6">
                         <div class="flex items-center">
-                            <div class="w-16 h-16 rounded-full review-avatar flex items-center justify-center mr-4" style="background-color: #fef3c7; color: #d97706; border-color: #fde68a;">
+                            <div class="w-16 h-16 rounded-full review-avatar flex items-center justify-center mr-4"
+                                style="background-color: #fef3c7; color: #d97706; border-color: #fde68a;">
                                 <span class="text-2xl font-bold">RJ</span>
                             </div>
                             <div>
@@ -386,24 +435,28 @@
                             <i class="far fa-star"></i>
                         </div>
                     </div>
-                    <p class="text-gray-700 mb-5 leading-relaxed">The menu has a good variety, but I found the prices to be a bit high for what you get. The Calamari was good but not exceptional - it could have been crispier and the seasoning was somewhat bland. I do like that they clearly mark allergens - that's very helpful for diners with dietary restrictions. The presentation was nice though, and the service was attentive.</p>
+                    <p class="text-gray-700 mb-5 leading-relaxed">The menu has a good variety, but I found the prices to
+                        be a bit high for what you get. The Calamari was good but not exceptional - it could have been
+                        crispier and the seasoning was somewhat bland. I do like that they clearly mark allergens -
+                        that's very helpful for diners with dietary restrictions. The presentation was nice though, and
+                        the service was attentive.</p>
                     <div class="flex flex-wrap gap-2">
                         <span class="dish-tag text-xs px-3 py-1 rounded-full">Crispy Calamari</span>
                     </div>
                 </div>
             </div>
         </section>
-        
+
         <div class="section-divider"></div>
-        
+
         <!-- Write Review Section -->
         <section id="write-review-section" class="bg-white rounded-xl shadow-lg p-10 mb-16 border border-gray-100">
             <div class="text-center mb-8">
                 <h2 class="text-3xl font-bold text-gray-800 mb-3">Share Your Experience</h2>
-                <div class="w-12 h-1 bg-violet-600 mx-auto mb-4"></div>
+                <div class="w-12 h-1 bg-bg-[#06180C]-600 mx-auto mb-4"></div>
                 <p class="text-gray-600">We value your feedback. Let us know what you thought about our menu.</p>
             </div>
-            
+
             <!-- Review Form -->
             <form action="#" method="post" class="space-y-8">
                 <div class="bg-gray-50 p-6 rounded-lg">
@@ -422,22 +475,28 @@
                         <label for="star1" class="text-gray-300 hover:text-yellow-400"></label>
                     </div>
                 </div>
-                
+
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                         <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
-                        <input type="text" id="name" name="name" class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent" placeholder="Enter your name" required>
+                        <input type="text" id="name" name="name"
+                            class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-bg-[#06180C]-500 focus:border-transparent"
+                            placeholder="Enter your name" required>
                     </div>
-                    
+
                     <div>
                         <label for="email" class="block text-gray-700 font-medium mb-2">Your Email</label>
-                        <input type="email" id="email" name="email" class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent" placeholder="Enter your email" required>
+                        <input type="email" id="email" name="email"
+                            class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-bg-[#06180C]-500 focus:border-transparent"
+                            placeholder="Enter your email" required>
                     </div>
                 </div>
-                
+
                 <div>
                     <label for="dishes" class="block text-gray-700 font-medium mb-2">Dishes You Tried</label>
-                    <select id="dishes" name="dishes[]" class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent" multiple>
+                    <select id="dishes" name="dishes[]"
+                        class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-bg-[#06180C]-500 focus:border-transparent"
+                        multiple>
                         <option value="calamari">Crispy Calamari</option>
                         <option value="bruschetta">Bruschetta</option>
                         <option value="salmon">Grilled Salmon</option>
@@ -447,32 +506,37 @@
                     </select>
                     <p class="text-sm text-gray-500 mt-1">Hold Ctrl/Cmd to select multiple dishes</p>
                 </div>
-                
+
                 <div>
                     <label for="review" class="block text-gray-700 font-medium mb-2">Your Review</label>
-                    <textarea id="review" name="review" class="w-full border border-gray-300 rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-transparent" rows="5" placeholder="Share your thoughts about our menu..." required></textarea>
+                    <textarea id="review" name="review"
+                        class="w-full border border-gray-300 rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-bg-[#06180C]-500 focus:border-transparent"
+                        rows="5" placeholder="Share your thoughts about our menu..." required></textarea>
                 </div>
-                
+
                 <div class="flex items-center">
-                    <input type="checkbox" id="consent" name="consent" class="h-5 w-5 text-violet-600 focus:ring-violet-500 border-gray-300 rounded" required>
+                    <input type="checkbox" id="consent" name="consent"
+                        class="h-5 w-5 text-bg-[#06180C] focus:ring-bg-[#06180C]-500 border-gray-300 rounded" required>
                     <label for="consent" class="ml-2 block text-sm text-gray-700">
                         I consent to having my review published on the website
                     </label>
                 </div>
-                
-                <button type="submit" class="w-full bg-violet-600 hover:bg-violet-700 text-white py-4 rounded-lg transition duration-300 font-medium text-lg shadow-md">
+
+                <button type="submit"
+                    class="w-full bg-[#06180C] hover:bg-[#0A2815] text-white py-4 rounded-lg transition duration-300 font-medium text-lg shadow-md">
                     Submit Review
                 </button>
             </form>
         </section>
     </main>
-    
-   <!-- Footer -->
+
+    <!-- Footer -->
     <footer class="bg-[#06180C] text-white py-10 mt-16 shadow-inner border-t border-[#1a232e]">
         <div class="container mx-auto px-4 md:px-8 flex flex-col md:flex-row justify-between items-center">
             <!-- Logo & Brand -->
             <div class="flex items-center mb-6 md:mb-0">
-                <img src="../IMG/BistroEleganceLogo.png" alt="Bistro Elegance Logo" class="w-14 h-14 rounded-xl shadow-lg mr-4 border-2 border-white/20">
+                <img src="../IMG/BistroEleganceLogo.png" alt="Bistro Elegance Logo"
+                    class="w-14 h-14 rounded-xl shadow-lg mr-4 border-2 border-white/20">
                 <span class="font-playfair text-2xl font-bold tracking-wide">Bistro Elegance</span>
             </div>
             <!-- Contact Info -->
@@ -480,31 +544,49 @@
                 <p class="text-sm font-medium tracking-wide">123 Main Street, Cityville, State 12345</p>
                 <p class="text-sm font-medium tracking-wide">
                     <span class="inline-block mr-2"></span>
-                        <svg class="inline w-4 h-4 mr-1 text-[#f1c40f]" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.07 21 3 13.93 3 5a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.24 1.01l-2.21 2.2z"/></svg>
-                        (123) 456-7890
+                    <svg class="inline w-4 h-4 mr-1 text-[#f1c40f]" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.07 21 3 13.93 3 5a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.24 1.01l-2.21 2.2z" />
+                    </svg>
+                    (123) 456-7890
                     </span>
                     <span class="inline-block"></span>
-                        <svg class="inline w-4 h-4 mr-1 text-[#f1c40f]" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 20v-9.99l8 7 8-7V20H4z"/></svg>
-                        <a href="mailto:info@bistroelegance.com" class="underline hover:text-[#f1c40f] transition">info@bistroelegance.com</a>
+                    <svg class="inline w-4 h-4 mr-1 text-[#f1c40f]" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 20v-9.99l8 7 8-7V20H4z" />
+                    </svg>
+                    <a href="mailto:info@bistroelegance.com"
+                        class="underline hover:text-[#f1c40f] transition">info@bistroelegance.com</a>
                     </span>
                 </p>
             </div>
             <!-- Social Media -->
             <div class="flex space-x-5">
                 <a href="#" aria-label="Facebook" class="hover:text-[#f1c40f] transition">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12.07C22 6.48 17.52 2 12 2S2 6.48 2 12.07c0 5.02 3.66 9.16 8.44 9.93v-7.03h-2.54v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.9h-2.34v7.03C18.34 21.23 22 17.09 22 12.07z"/></svg>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M22 12.07C22 6.48 17.52 2 12 2S2 6.48 2 12.07c0 5.02 3.66 9.16 8.44 9.93v-7.03h-2.54v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.9h-2.34v7.03C18.34 21.23 22 17.09 22 12.07z" />
+                    </svg>
                 </a>
                 <a href="#" aria-label="Instagram" class="hover:text-[#f1c40f] transition">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm4.25 3.25a5.25 5.25 0 1 1 0 10.5 5.25 5.25 0 0 1 0-10.5zm0 1.5a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5zm5.13.88a1.13 1.13 0 1 1-2.25 0 1.13 1.13 0 0 1 2.25 0z"/></svg>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm4.25 3.25a5.25 5.25 0 1 1 0 10.5 5.25 5.25 0 0 1 0-10.5zm0 1.5a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5zm5.13.88a1.13 1.13 0 1 1-2.25 0 1.13 1.13 0 0 1 2.25 0z" />
+                    </svg>
                 </a>
                 <a href="#" aria-label="Twitter" class="hover:text-[#f1c40f] transition">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.59-2.47.69a4.3 4.3 0 0 0 1.88-2.37 8.59 8.59 0 0 1-2.72 1.04 4.28 4.28 0 0 0-7.29 3.9A12.13 12.13 0 0 1 3.1 4.86a4.28 4.28 0 0 0 1.32 5.71c-.7-.02-1.36-.21-1.94-.53v.05a4.28 4.28 0 0 0 3.43 4.19c-.33.09-.68.14-1.04.14-.25 0-.5-.02-.74-.07a4.29 4.29 0 0 0 4 2.98A8.6 8.6 0 0 1 2 19.54a12.13 12.13 0 0 0 6.56 1.92c7.88 0 12.2-6.53 12.2-12.2 0-.19 0-.39-.01-.58A8.7 8.7 0 0 0 24 4.59a8.48 8.48 0 0 1-2.54.7z"/></svg>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M22.46 6c-.77.35-1.6.59-2.47.69a4.3 4.3 0 0 0 1.88-2.37 8.59 8.59 0 0 1-2.72 1.04 4.28 4.28 0 0 0-7.29 3.9A12.13 12.13 0 0 1 3.1 4.86a4.28 4.28 0 0 0 1.32 5.71c-.7-.02-1.36-.21-1.94-.53v.05a4.28 4.28 0 0 0 3.43 4.19c-.33.09-.68.14-1.04.14-.25 0-.5-.02-.74-.07a4.29 4.29 0 0 0 4 2.98A8.6 8.6 0 0 1 2 19.54a12.13 12.13 0 0 0 6.56 1.92c7.88 0 12.2-6.53 12.2-12.2 0-.19 0-.39-.01-.58A8.7 8.7 0 0 0 24 4.59a8.48 8.48 0 0 1-2.54.7z" />
+                    </svg>
                 </a>
             </div>
         </div>
         <div class="mt-8 border-t border-white/10 pt-6 text-center text-xs text-gray-400 tracking-wide">
-            &copy; 2025 Bistro Elegance. All rights reserved. &mdash; Designed with <span class="text-[#f1c40f]">elegance</span> and <span class="text-[#f1c40f]">passion</span>.
+            &copy; 2025 Bistro Elegance. All rights reserved. &mdash; Designed with <span
+                class="text-[#f1c40f]">elegance</span> and <span class="text-[#f1c40f]">passion</span>.
         </div>
     </footer></a>
 </body>
+
 </html>

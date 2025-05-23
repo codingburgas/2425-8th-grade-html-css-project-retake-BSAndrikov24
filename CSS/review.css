@@ -37,7 +37,7 @@
         }
 
         .tab-active {
-            color: #8b5cf6;
+            color: #895af6;
             border-bottom: 3px solid #8b5cf6;
         }
 
@@ -63,12 +63,6 @@
         .review-form-stars input:checked~label:before {
             color: #d4af37;
             font-weight: 900;
-        }
-
-        .dish-tag {
-            background-color: #f3f0ff;
-            border: 1px solid #ddd6fe;
-            color: #7c3aed;
         }
 
         .section-divider {
@@ -106,7 +100,7 @@
         }
 
         .price-tag {
-            background-color: #8b5cf6;
+            background-color: #0a2914;
             color: white;
             padding: 0.25rem 0.75rem;
             border-radius: 9999px;
@@ -117,74 +111,4 @@
             background-color: #f3f0ff;
             color: #7c3aed;
             border: 2px solid #ddd6fe;
-        }
-
-        /* Responsive styles */
-        @media (max-width: 768px) {
-            .section-header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .section-icon {
-                margin-right: 0;
-                margin-bottom: 8px;
-            }
-
-            .dish-image {
-                width: 48px;
-                height: 48px;
-                min-width: 48px;
-                margin-right: 0.5rem;
-            }
-
-            .dish-image svg {
-                width: 28px;
-                height: 28px;
-            }
-
-            .site-name {
-                font-size: 1.1rem;
-            }
-
-            .divider {
-                height: 40px;
-                margin: 24px 0;
-            }
-
-            .filter-btn {
-                padding: 0.4rem 0.8rem;
-                font-size: 0.95rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            header {
-                padding: 0.5rem 0;
-            }
-
-            .site-name {
-                font-size: 1rem;
-            }
-
-            h1,
-            h2,
-            h3 {
-                font-size: 1.1rem;
-            }
-
-            .section-header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .divider {
-                height: 24px;
-                margin: 16px 0;
-            }
-
-            .filter-btn {
-                padding: 0.3rem 0.6rem;
-                font-size: 0.9rem;
-            }
         }
