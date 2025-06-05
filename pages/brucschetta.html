@@ -2,51 +2,83 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../CSS/bruschetta.css">
-    <link rel="stylesheet" href="../CSS/responsive.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bistro Elegance | Menu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="CSS/home-page.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
 </head>
 
 <body>
 
-    < <header class="bg-[#06180C] text-white  overflow-hidden py-6 shadow-md top-0 z-10 x">
+    <!-- Header -->
+    <header class="bg-[#06180C]  text-[#fff] py-6 shadow-md top-0 z-10">
         <div class="container mx-auto px-4 md:px-8">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="flex items-center mb-4 md:mb-0">
-                    <a href="#"><img src="../IMG/BistroEleganceLogo.png" alt="Bistro Elegance Logo"
-                            class="w-14 h-14 rounded-xl shadow-lg mr-4 border-2 border-white/20"
-                            style="width: 80px; height: 80px;"></a>
+                    <a href="#">
+                        <img src="../IMG/BistroEleganceLogo.png" alt="Bistro Elegance Logo"
+                            class="w-14 h-14 rounded-xl shadow-lg mr-4 border-2 border-white/20">
+                    </a>
                     <p class="site-name">Bistro Elegance</p>
                 </div>
                 <nav class="w-full md:w-auto">
                     <ul class="flex flex-wrap justify-center gap-2 md:gap-6">
-                        <li><a href="#" class="px-3 py-2 hover:bg-[#34495e] rounded-md transition">Home page</a>
-                        </li>
-
                         <li><a href="../index.html" class="px-3 py-2 hover:bg-[#34495e] rounded-md transition">Menu</a>
                         </li>
-
-                        <li><a href="../about-us.html"
-                                class="px-3 py-2 hover:bg-[#34495e] rounded-md transition">AboutUs</a>
-                        </li>
-                        <li><a href="../contact-us.html"
-                                class="px-3 py-2 hover:bg-[#34495e] rounded-md transition">Contact Us</a>
-                        </li>
-
+                        <li><a href="../pages/about-us.html"
+                                class="px-3 py-2 hover:bg-[#34495e] rounded-md transition">About Us</a></li>
+                        <li><a href="../pages/contact-us.html"
+                                class="px-3 py-2 hover:bg-[#34495e] rounded-md transition">Contact Us</a></li>
+                        <li><a href="../pages/review.html"
+                                class="px-3 py-2 hover:bg-[#34495e] rounded-md transition">Reviews</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-    
+    <main class="container px-4 md-px-8 py-12">
+        <div class="flex flex-col flex-row items-center gap-10">
+            <!-- Image Slot -->
+            <div class="md-w-1-2 w-full flex justify-center mb-8 mb-0">
+                <div
+                    class="w-full max-w-md h-64 bg-gray-200 rounded-lg flex items-center justify-center shadow-lg overflow-hidden">
+                    <img src="../IMG/bruschetta.jpg" alt="Bruschetta" class="object-cover w-full h-full" />
+                </div>
+            </div>
+            <!-- Information Section -->
+            <div class="md-w-1-2 w-full">
+                <h1 class="text-4xl font-playfair font-bold mb-4 text-[#06180C]">Bruschetta</h1>
+                <p class="text-lg text-gray-700 mb-6">
+                    Bruschetta is a classic Italian appetizer consisting of grilled bread rubbed with garlic and topped
+                    with a mixture of fresh tomatoes, basil, olive oil, salt, and pepper. It's a simple yet flavorful
+                    dish that highlights the freshness of its ingredients, making it a favorite starter in Italian
+                    cuisine.
+                </p>
+                <ul class="list-disc list-inside text-gray-600 mb-4">
+                    <li>Origin: Italy</li>
+                    <li>Main ingredients: Bread, tomatoes, basil, garlic, olive oil</li>
+                    <li>Course: Appetizer</li>
+                </ul>
+                <p class="text-gray-700">
+                    Enjoy bruschetta as a light snack or as an elegant starter to your meal at Bistro Elegance!
+                </p>
+            </div>
+        </div>
+    </main>
+
     <!-- Footer -->
     <footer class="bg-[#06180C] text-white py-10 mt-16 shadow-inner border-t border-[#1a232e]">
         <div class="container mx-auto px-4 md:px-8 flex flex-col md:flex-row justify-between items-center">
             <!-- Лого и бранд -->
             <div class="flex items-center mb-6 md:mb-0">
-                <img src="IMG/BistroEleganceLogo.png" alt="Bistro Elegance Logo"
+                <img src="../IMG/BistroEleganceLogo.png" alt="Bistro Elegance Logo"
                     class="w-14 h-14 rounded-xl shadow-lg mr-4 border-2 border-white/20" />
                 <span class="font-playfair text-2xl font-bold tracking-wide">Bistro Elegance</span>
             </div>
