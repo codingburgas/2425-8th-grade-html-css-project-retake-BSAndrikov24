@@ -32,10 +32,10 @@
                         <li><a href="../index.html" class="px-3 py-2 hover:bg-[#34495e] rounded-md transition">Menu</a>
                         </li>
 
-                        <li><a href="../about-us.html"
+                        <li><a href="../pages/about-us.html"
                                 class="px-3 py-2 hover:bg-[#34495e] rounded-md transition">AboutUs</a>
                         </li>
-                        <li><a href="../contact-us.html"
+                        <li><a href="../pages/contact-us.html"
                                 class="px-3 py-2 hover:bg-[#34495e] rounded-md transition">Contact Us</a>
                         </li>
 
@@ -64,255 +64,106 @@
 
     <main class="container mx-auto py-12 px-4 md:px-6">
         <!-- Menu Section -->
-        <section id="menu-section" class="mb-16">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-gray-800 mb-3">Our Curated Menu</h2>
-                <div class="w-16 h-1 bg-bg-[#06180C]-600 mx-auto mb-4"></div>
-                <p class="text-gray-600 max-w-2xl mx-auto">Discover our selection of expertly crafted dishes, prepared
-                    with the finest ingredients and attention to detail</p>
+
+
+        <div class="menu-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
+            <div class="h-56 overflow-hidden menu-image">
+                <span class="menu-category-label">Main Course</span>
+                    <!-- Main Course image -->
+                    <img src="../IMG/filet mignon.jpeg" alt="" class="object-cover w-full h-full">
             </div>
-
-            <div class="flex justify-between items-center mb-8">
-                <h3 class="text-2xl font-semibold text-gray-700">Featured Dishes</h3>
-                <div class="flex items-center space-x-2">
-                    <span class="text-lg font-medium text-gray-600">Filter by:</span>
-                    <form method="get" action="">
-                        <select name="category"
-                            class="border border-gray-300 rounded-md py-2 px-4 bg-white focus:outline-none focus:ring-2 focus:ring-bg-[#06180C]-500 focus:border-transparent">
-                            <option value="all">All Categories</option>
-                            <option value="starters">Starters</option>
-                            <option value="mains">Main Courses</option>
-                            <option value="desserts">Desserts</option>
-                            <option value="beverages">Beverages</option>
-                        </select>
-                    </form>
+            <div class="p-6">
+                <div class="flex justify-between items-start mb-3">
+                    <h3 class="text-xl font-bold text-gray-800">Filet Mignon</h3>
+                    <span class="price-tag">$18.99</span>
                 </div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Starters -->
-                <div class="menu-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
-                    <div class="h-56 overflow-hidden menu-image">
-                        <span class="menu-category-label">Starter</span>
-                        <div
-                            class="w-full h-full bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center">
-                            <!-- Starter SVG Icon -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-white" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-xl font-bold text-gray-800">Crispy Calamari</h3>
-                            <span class="price-tag">$12.99</span>
-                        </div>
-                        <p class="text-gray-600 mb-4 leading-relaxed">Tender calamari rings lightly coated in seasoned
-                            flour and fried to perfection. Served with lemon aioli and fresh herbs.</p>
-                        <div class="mb-4">
-                            <span class="allergen-tag">Gluten</span>
-                            <span class="allergen-tag">Seafood</span>
-                        </div>
-                        <div class="flex items-center">
-                            <div class="review-stars mr-2">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <span class="text-sm text-gray-500">(24 reviews)</span>
-                        </div>
-                    </div>
+                <p class="text-gray-600 mb-4 leading-relaxed">Creamy Arborio rice slowly cooked with wild
+                    mushrooms, white wine, and finished with aged parmesan cheese and truffle oil.</p>
+                <div class="mb-4">
+                    <span class="allergen-tag">Dairy</span>
                 </div>
-
-                <div class="menu-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
-                    <div class="h-56 overflow-hidden menu-image">
-                        <span class="menu-category-label">Starter</span>
-                        <div
-                            class="w-full h-full bg-gradient-to-br from-green-400 to-emerald-500 flex items-center justify-center">
-                            <!-- Starter SVG Icon -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-white" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-                            </svg>
-                        </div>
+                <div class="flex items-center">
+                    <div class="review-stars mr-2">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
                     </div>
-                    <div class="p-6">
-                        <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-xl font-bold text-gray-800">Bruschetta</h3>
-                            <span class="price-tag">$9.99</span>
-                        </div>
-                        <p class="text-gray-600 mb-4 leading-relaxed">Toasted artisan bread topped with fresh tomatoes,
-                            basil, garlic, and extra virgin olive oil. Finished with balsamic glaze.</p>
-                        <div class="mb-4">
-                            <span class="allergen-tag">Gluten</span>
-                        </div>
-                        <div class="flex items-center">
-                            <div class="review-stars mr-2">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-                            <span class="text-sm text-gray-500">(18 reviews)</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Main Courses -->
-                <div class="menu-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
-                    <div class="h-56 overflow-hidden menu-image">
-                        <span class="menu-category-label">Main Course</span>
-                        <div
-                            class="w-full h-full bg-gradient-to-br from-red-400 to-rose-500 flex items-center justify-center">
-                            <!-- Main Course SVG Icon -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-white" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-xl font-bold text-gray-800">Grilled Salmon</h3>
-                            <span class="price-tag">$24.99</span>
-                        </div>
-                        <p class="text-gray-600 mb-4 leading-relaxed">Fresh Atlantic salmon fillet grilled to
-                            perfection, served with roasted seasonal vegetables and lemon herb sauce.</p>
-                        <div class="mb-4">
-                            <span class="allergen-tag">Fish</span>
-                        </div>
-                        <div class="flex items-center">
-                            <div class="review-stars mr-2">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <span class="text-sm text-gray-500">(42 reviews)</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="menu-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
-                    <div class="h-56 overflow-hidden menu-image">
-                        <span class="menu-category-label">Main Course</span>
-                        <div
-                            class="w-full h-full bg-gradient-to-br from-amber-400 to-yellow-500 flex items-center justify-center">
-                            <!-- Main Course SVG Icon -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-white" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-xl font-bold text-gray-800">Mushroom Risotto</h3>
-                            <span class="price-tag">$18.99</span>
-                        </div>
-                        <p class="text-gray-600 mb-4 leading-relaxed">Creamy Arborio rice slowly cooked with wild
-                            mushrooms, white wine, and finished with aged parmesan cheese and truffle oil.</p>
-                        <div class="mb-4">
-                            <span class="allergen-tag">Dairy</span>
-                        </div>
-                        <div class="flex items-center">
-                            <div class="review-stars mr-2">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <span class="text-sm text-gray-500">(31 reviews)</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Desserts -->
-                <div class="menu-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
-                    <div class="h-56 overflow-hidden menu-image">
-                        <span class="menu-category-label">Dessert</span>
-                        <div
-                            class="w-full h-full bg-gradient-to-br from-pink-400 to-purple-500 flex items-center justify-center">
-                            <!-- Dessert SVG Icon -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-white" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z" />
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-xl font-bold text-gray-800">Chocolate Lava Cake</h3>
-                            <span class="price-tag">$10.99</span>
-                        </div>
-                        <p class="text-gray-600 mb-4 leading-relaxed">Warm chocolate cake with a molten center, served
-                            with premium vanilla bean ice cream and fresh seasonal berries.</p>
-                        <div class="mb-4">
-                            <span class="allergen-tag">Gluten</span>
-                            <span class="allergen-tag">Dairy</span>
-                            <span class="allergen-tag">Eggs</span>
-                        </div>
-                        <div class="flex items-center">
-                            <div class="review-stars mr-2">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <span class="text-sm text-gray-500">(56 reviews)</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Beverages -->
-                <div class="menu-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
-                    <div class="h-56 overflow-hidden menu-image">
-                        <span class="menu-category-label">Beverage</span>
-                        <div
-                            class="w-full h-full bg-gradient-to-br from-blue-400 to-cyan-500 flex items-center justify-center">
-                            <!-- Beverage SVG Icon -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-white" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex justify-between items-start mb-3">
-                            <h3 class="text-xl font-bold text-gray-800">Berry Smoothie</h3>
-                            <span class="price-tag">$7.99</span>
-                        </div>
-                        <p class="text-gray-600 mb-4 leading-relaxed">Refreshing blend of mixed berries, Greek yogurt,
-                            and organic honey. A perfect healthy treat to complement your meal.</p>
-                        <div class="mb-4">
-                            <span class="allergen-tag">Dairy</span>
-                        </div>
-                        <div class="flex items-center">
-                            <div class="review-stars mr-2">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-                            <span class="text-sm text-gray-500">(19 reviews)</span>
-                        </div>
-                    </div>
+                    <span class="text-sm text-gray-500">(31 reviews)</span>
                 </div>
             </div>
+        </div>
+
+        <!-- Desserts -->
+        <div class="menu-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
+            <div class="h-56 overflow-hidden menu-image">
+                <span class="menu-category-label">Starter</span>
+                <div
+                    class="w-full h-full bg-gradient-to-br from-pink-400 to-purple-500 flex items-center justify-center">
+                    <!-- Dessert Icon -->
+                    <img src="../IMG/bruschetta.jpg" alt="">
+                </div>
+            </div>
+            <div class="p-6">
+                <div class="flex justify-between items-start mb-3">
+                    <h3 class="text-xl font-bold text-gray-800">Bruschetta</h3>
+                    <span class="price-tag">$8.95</span>
+                </div>
+                <p class="text-gray-600 mb-4 leading-relaxed">Bruschetta is a classic Italian appetizer consisting of
+                    grilled bread rubbed with garlic and topped with a mixture of fresh tomatoes, basil, olive oil,
+                    salt, and pepper. It's a simple yet flavorful dish that highlights the freshness of its ingredients,
+                    making it a favorite starter in Italian cuisine..</p>
+                <div class="mb-4">
+                    <span class="allergen-tag">Gluten</span>
+                    <span class="allergen-tag">Dairy</span>
+                    <span class="allergen-tag">Eggs</span>
+                </div>
+                <div class="flex items-center">
+                    <div class="review-stars mr-2">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="text-sm text-gray-500">(56 reviews)</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Beverages -->
+        <div class="menu-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
+            <div class="h-56 overflow-hidden menu-image">
+                <span class="menu-category-label">Dessert</span>
+                <div class="w-full h-full bg-gradient-to-br from-blue-400 to-cyan-500 flex items-center justify-center">
+                    <!-- Beverage SVG image -->
+                    <img src="../IMG/chocolavacake.jpg" alt="">
+                </div>
+            </div>
+            <div class="p-6">
+                <div class="flex justify-between items-start mb-3">
+                    <h3 class="text-xl font-bold text-gray-800">Chocolate lava cake</h3>
+                    <span class="price-tag">$7.99</span>
+                </div>
+                <p class="text-gray-600 mb-4 leading-relaxed">Refreshing blend of mixed berries, Greek yogurt,
+                    and organic honey. A perfect healthy treat to complement your meal.</p>
+                <div class="mb-4">
+                    <span class="allergen-tag">Dairy</span>
+                </div>
+                <div class="flex items-center">
+                    <div class="review-stars mr-2">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <span class="text-sm text-gray-500">(19 reviews)</span>
+                </div>
+            </div>
+        </div>
+        </div>
         </section>
 
         <div class="section-divider"></div>
@@ -502,12 +353,12 @@
                     <select id="dishes" name="dishes[]"
                         class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-bg-[#06180C]-500 focus:border-transparent"
                         multiple>
-                        <option value="calamari">Crispy Calamari</option>
+                        <option value="calamari">Baked feta</option>
                         <option value="bruschetta">Bruschetta</option>
-                        <option value="salmon">Grilled Salmon</option>
-                        <option value="risotto">Mushroom Risotto</option>
+                        <option value="salmon">Filet Mignon</option>
+                        <option value="risotto">Garlic Mashed Potatoes </option>
                         <option value="cake">Chocolate Lava Cake</option>
-                        <option value="smoothie">Berry Smoothie</option>
+                        <option value="smoothie">Lemon Meringue Tart</option>
                     </select>
                     <p class="text-sm text-gray-500 mt-1">Hold Ctrl/Cmd to select multiple dishes</p>
                 </div>

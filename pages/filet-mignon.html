@@ -4,15 +4,21 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bistro Elegance | Contact us</title>
+    <title>Bistro Elegance | Menu</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="../CSS/contact-us.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../CSS/home-page.css">
     <link rel="stylesheet" href="../CSS/responsive.css">
 </head>
 
 <body>
+
     <!-- Header -->
-    <header class="py-6 shadow-md top-0 z-10">
+    <header class="bg-[#06180C]  text-[#fff] py-6 shadow-md top-0 z-10">
         <div class="container mx-auto px-4 md:px-8">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="flex items-center mb-4 md:mb-0">
@@ -24,10 +30,10 @@
                 </div>
                 <nav class="w-full md:w-auto">
                     <ul class="flex flex-wrap justify-center gap-2 md:gap-6">
-                        <li><a href="../index.html"
-                            class="px-3 py-2 hover:bg-[#34495e] rounded-md transition">Menu</a></li>
+                        <li><a href="../index.html" class="px-3 py-2 hover:bg-[#34495e] rounded-md transition">Menu</a>
+                        </li>
                         <li><a href="../pages/about-us.html"
-                            class="px-3 py-2 hover:bg-[#34495e] rounded-md transition">About Us</a></li>
+                                class="px-3 py-2 hover:bg-[#34495e] rounded-md transition">About Us</a></li>
                         <li><a href="../pages/contact-us.html"
                                 class="px-3 py-2 hover:bg-[#34495e] rounded-md transition">Contact Us</a></li>
                         <li><a href="../pages/review.html"
@@ -37,74 +43,67 @@
             </div>
         </div>
     </header>
-    <div class="container">
-        <h1>Contact Us</h1>
-        <div class="grid">
-            <!-- Contact Information -->
-            <div class="info-section">
-                <h2>Our Location</h2>
-                <p>123 Flavor Street<br>Foodville, FV 45678</p>
-
-                <h2>Call or Email</h2>
-                <p>Phone: (123) 456-7890<br>Email: contact@bistrodelight.com</p>
-
-                <h2>Opening Hours</h2>
-                <p>Mon - Fri: 11am - 10pm<br>Sat - Sun: 9am - 11pm</p>
+    <main class="container px-4 md-px-8 py-12">
+        <div class="flex flex-col flex-row items-center gap-10">
+            <!-- Image Slot -->
+            <div class="md-w-1-2 w-full flex justify-center mb-8 mb-0">
+                <div
+                    class="w-full max-w-md h-64 bg-gray-200 rounded-lg flex items-center justify-center shadow-lg overflow-hidden">
+                    <img src="../IMG/filet mignon.jpeg" alt="Bruschetta"
+                        class="object-cover w-full h-full" />
+                </div>
             </div>
-
-            <!-- Contact Form -->
-            <form>
-                <div>
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required />
-                </div>
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required />
-                </div>
-                <div>
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="6" required></textarea>
-                </div>
-                <button type="submit">Send Message</button>
-            </form>
+            <!-- Information Section -->
+            <div class="md-w-1-2 w-full">
+                <h1 class="text-4xl font-playfair font-bold mb-4 text-[#06180C]">Filet Mignon</h1>
+                <p class="text-lg text-gray-700 mb-6">
+                    This dish is a classic from French cuisine, known for its incredible tenderness and elegance. Filet
+                    mignon is often served at fine dining restaurants and special occasions because of its buttery
+                    texture and mild flavor. While many cook it with heavy sauces, I prefer a simple pan-sear with
+                    garlic and thyme to let the meat shine on its own.
+                </p>
+                <ul class="list-disc list-inside text-gray-600 mb-4">
+                    <li>Origin: France</li>
+                    <li>Filet mignon (beef tenderloin), salt, cracked black pepper, garlic cloves, fresh thyme, butter, olive oil</li>
+                    <li>Course: Main Course</li>
+                </ul>
+                <p class="text-gray-700">
+                    Enjoy baked feta as a light snack or as an elegant starter to your meal at Bistro Elegance!
+                </p>
+            </div>
         </div>
+    </main>
 
-        <!-- Google Map -->
-        <div class="map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.163331234!2d-122.41941508468128!3d37.77492977975914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5ba3b3b5%3A0xbfb7c2fabc!2s123+Flavor+Street%2C+Foodville!5e0!3m2!1sen!2sus!4v1615083730802"
-                width="118%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-    </div>
-    <footer class="w-full bg-[#06180C] text-white py-10 mt-16 shadow-inner border-t border-[#1a232e]">
+    <!-- Footer -->
+    <footer class="bg-[#06180C] text-white py-10 mt-16 shadow-inner border-t border-[#1a232e]">
         <div class="container mx-auto px-4 md:px-8 flex flex-col md:flex-row justify-between items-center">
-            <!-- Logo and Brand -->
+            <!-- Logo and brand -->
             <div class="flex items-center mb-6 md:mb-0">
-                <img src="../IMG/BistroEleganceLogo.png" alt="Bistro Elegance Logo"
+                <img src="../IMG/BistroEleganceLogo.png " alt="Bistro Elegance Logo"
                     class="w-14 h-14 rounded-xl shadow-lg mr-4 border-2 border-white/20" />
                 <span class="font-playfair text-2xl font-bold tracking-wide">Bistro Elegance</span>
             </div>
-            <!-- Contact Details -->
+            <!-- Conract -->
             <div class="text-center md:text-left mb-6 md:mb-0">
-                <p class="text-sm font-medium tracking-wide">123 Flavor Street, Foodville, FV 45678</p>
-                <p class="text-sm font-medium tracking-wide mt-1 flex items-center justify-center md:justify-start">
+                <p class="text-sm font-medium tracking-wide">123 Main Street, Cityville, State 12345</p>
+                <p class="text-sm font-medium tracking-wide">
+                    <span class="inline-block mr-2"></span>
                     <svg class="inline w-4 h-4 mr-1 text-[#f1c40f]" fill="currentColor" viewBox="0 0 24 24">
                         <path
                             d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.07 21 3 13.93 3 5a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.24 1.01l-2.21 2.2z" />
                     </svg>
                     (123) 456-7890
                 </p>
-                <p class="mt-2 flex items-center justify-center md:justify-start">
+                <p class="mt-2">
                     <svg class="inline w-4 h-4 mr-1 text-[#f1c40f]" fill="currentColor" viewBox="0 0 24 24">
                         <path
                             d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 20v-9.99l8 7 8-7V20H4z" />
                     </svg>
-                    <a href="mailto:contact@bistrodelight.com"
-                        class="underline hover:text-[#f1c40f] transition">contact@bistrodelight.com</a>
+                    <a href="mailto:info@bistroelegance.com"
+                        class="underline hover:text-[#f1c40f] transition">info@bistroelegance.com</a>
                 </p>
             </div>
-            <!-- Social Media Links -->
+
             <div class="flex space-x-5 mt-4 md:mt-0">
                 <a href="#" aria-label="Facebook" class="hover:text-[#f1c40f] transition">
                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -131,6 +130,7 @@
             and <span class="text-[#f1c40f]">passion</span>.
         </div>
     </footer>
+
 </body>
 
 </html>
